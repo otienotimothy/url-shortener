@@ -26,3 +26,11 @@
     --primary-font-family: 'Poppins', sans-serif;
     --primary-font-size: 18px;
 }
+
+html {
+    font-size: var(--primary-font-size);
+}
+
+body {
+    font-family: var(--primary-font-family);
+}
