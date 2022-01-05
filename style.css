@@ -34,3 +34,65 @@ html {
 body {
     font-family: var(--primary-font-family);
 }
+
+/* Header Section */
+header {
+    height: 115vh;
+}
+
+/* Page Top Bar */
+.app-bar {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 1.2rem;
+}
+
+nav {
+    display: none;
+}
+
+.register {
+    display: none;
+}
+
+.app-bar > i {
+    font-size: 1.4rem;
+    color: var(--neutral-greyish-violet);
+}
+
+/* Hero Section */
+.hero-img {
+    width: 135%;
+    margin-left: 1.2rem;
+    margin-bottom: 2.4rem;
+}
+
+.hero-section > .main-heading {
+    margin-inline: 1.2rem;
+    text-align: center;
+}
+
+.main-heading > h1 {
+    font-weight: 700;
+    font-size: 2.2rem;
+    color: var(--neutral-dark-violet);
+    line-height: 1.2;
+    margin-bottom: 1.2rem;
+}
+
+.main-heading > p {
+    color: var(--neutral-greyish-violet);
+    margin-bottom: 1.2rem;
+}
+
+.main-heading > button {
+    padding: .8rem 1.8rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 1.8rem;
+    border: none;
+    background-color: var(--primary-cyan);
+    color: #fff;
+}
