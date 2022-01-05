@@ -4,10 +4,16 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- Font Awsome Icons -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<!-- Font Awsome Icons -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+			integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
 		<!-- CSS Styling -->
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="style.css" />
 		<title>Shortly</title>
 	</head>
 	<body>
@@ -27,10 +33,10 @@
 					<button>Login</button>
 					<button>Sign Up</button>
 				</div>
-                <i class="fas fa-bars"></i>
+				<i class="fas fa-bars"></i>
 			</div>
 			<div class="hero-section">
-                <img
+				<img
 					src="./assets/images/illustration-working.svg"
 					alt="illustration-working"
 					class="hero-img"
@@ -48,5 +54,56 @@
 				</div>
 			</div>
 		</header>
+		<section class="main-shortener">
+			<form class="shortener-form">
+				<input type="text" placeholder="Shorten a link here..." />
+				<button>Shorten It!</button>
+			</form>
+			<div class="advanced-statistics">
+				<h2>Advanced Statistics</h2>
+				<p>
+					<span>Track how your links are performing</span>
+					<span>across the web with our advanced</span>
+					<span>statistics dashboard.</span>
+				</p>
+				<div class="advanced-statistics-items">
+					<article class="brand-recognition">
+						<img
+							src="./assets/images/icon-brand-recognition.svg"
+							alt="brand-recognition-icon"
+						/>
+						<h3>Brand Recognition</h3>
+						<p>
+							Boost your brand recognition with each click. Generic links don't
+							mean a thing. Branded links help instill confidence in your
+							content.
+						</p>
+					</article>
+					<article class="detailed-records">
+						<img
+							src="./assets/images/icon-detailed-records.svg"
+							alt="detailed-records-icon"
+						/>
+						<h3>Detailed Records</h3>
+						<p>
+							Gain insights into who is clicking your links. Knowing when and
+							where people engage with your content helps inform better
+							decisions.
+						</p>
+					</article>
+					<article class="fully-customizable">
+						<img
+							src="./assets/images/icon-fully-customizable.svg"
+							alt="fully-customizable-icon"
+						/>
+						<h3>Fully Customizable</h3>
+						<p>
+							Improve brand awareness and content discoverability through
+							customizable links, supercharging audience engagement.
+						</p>
+					</article>
+				</div>
+			</div>
+		</section>
 	</body>
 </html>

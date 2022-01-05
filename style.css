@@ -1,98 +1,138 @@
 /* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 /* Remove Page Defaults */
 
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
 }
 
 /* CSS VARIABLES */
 
 :root {
-    /* Colors */
-    --primary-cyan: hsl(180, 66%, 49%);
-    --primary-dark-violet: hsl(257, 27%, 26%);
-    --secondary-red: hsl(0, 87%, 67%);
-    --neutral-grey: hsl(0, 0%, 75%);
-    --neutral-greyish-violet: hsl(257, 7%, 63%);
-    --neutral-dark-blue: hsl(255, 11%, 22%);
-    --neutral-dark-violet: hsl(260, 8%, 14%);
-    /* Typography */
-    --primary-font-family: 'Poppins', sans-serif;
-    --primary-font-size: 18px;
+	/* Colors */
+	--primary-cyan: hsl(180, 66%, 49%);
+	--primary-dark-violet: hsl(257, 27%, 26%);
+	--secondary-red: hsl(0, 87%, 67%);
+	--neutral-grey: hsl(0, 0%, 75%);
+	--neutral-greyish-violet: hsl(257, 7%, 63%);
+	--neutral-dark-blue: hsl(255, 11%, 22%);
+	--neutral-dark-violet: hsl(260, 8%, 14%);
+	/* Typography */
+	--primary-font-family: "Poppins", sans-serif;
+	--primary-font-size: 18px;
 }
 
 html {
-    font-size: var(--primary-font-size);
+	font-size: var(--primary-font-size);
 }
 
 body {
-    font-family: var(--primary-font-family);
+	font-family: var(--primary-font-family);
 }
 
 /* Header Section */
 header {
-    height: 115vh;
+	min-height: 110vh;
 }
 
 /* Page Top Bar */
 .app-bar {
-    height: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-inline: 1.2rem;
+	height: 10vh;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-inline: 1.2rem;
 }
 
 nav {
-    display: none;
+	display: none;
 }
 
 .register {
-    display: none;
+	display: none;
 }
 
 .app-bar > i {
-    font-size: 1.4rem;
-    color: var(--neutral-greyish-violet);
+	font-size: 1.4rem;
+	color: var(--neutral-greyish-violet);
 }
 
 /* Hero Section */
 .hero-img {
-    width: 135%;
-    margin-left: 1.2rem;
-    margin-bottom: 2.4rem;
+	width: 135%;
+	margin-left: 1.2rem;
+	margin-bottom: 2.4rem;
 }
 
 .hero-section > .main-heading {
-    margin-inline: 1.2rem;
-    text-align: center;
+	margin-inline: 1.2rem;
+	text-align: center;
 }
 
 .main-heading > h1 {
-    font-weight: 700;
-    font-size: 2.2rem;
-    color: var(--neutral-dark-violet);
-    line-height: 1.2;
-    margin-bottom: 1.2rem;
+	font-weight: 700;
+	font-size: 2.2rem;
+	color: var(--neutral-dark-violet);
+	line-height: 1.2;
+	margin-bottom: 1.2rem;
 }
 
 .main-heading > p {
-    color: var(--neutral-greyish-violet);
-    margin-bottom: 1.2rem;
+	color: var(--neutral-greyish-violet);
+	margin-bottom: 1.2rem;
 }
 
 .main-heading > button {
-    padding: .8rem 1.8rem;
-    font-size: 1.2rem;
-    font-weight: 700;
-    border-radius: 1.8rem;
-    border: none;
-    background-color: var(--primary-cyan);
-    color: #fff;
+	padding: 0.8rem 1.8rem;
+	font-size: 1.2rem;
+	font-weight: 700;
+	border-radius: 1.8rem;
+	border: none;
+	background-color: var(--primary-cyan);
+	color: #fff;
+}
+
+/* URL Shortener Section */
+
+.main-shortener {
+	background-color: var(--neutral-grey);
+	padding-inline: 1.2rem;
+	/* height: 50vh; */
+}
+
+.shortener-form {
+	background-image: linear-gradient(
+			to left,
+			hsla(257, 27%, 26%, 0.9),
+			hsla(257, 27%, 26%, 0.9)
+		),
+		url("./assets/images/bg-shorten-mobile.svg");
+	padding: 1.2rem;
+	border-radius: 0.8rem;
+	transform: translateY(-90px);
+}
+
+.shortener-form input,
+.shortener-form button {
+	width: 100%;
+	padding: 0.8rem;
+	margin-bottom: 0.8rem;
+	border: none;
+	border-radius: 0.4rem;
+	font-size: 1rem;
+	font-weight: 700;
+}
+
+.shortener-form input {
+	margin-top: 0.8rem;
+}
+
+.shortener-form button {
+	background-color: var(--primary-cyan);
+	color: #fff;
 }
