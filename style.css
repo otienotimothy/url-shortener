@@ -145,8 +145,6 @@ header {
 	padding-top: 10rem;
 }
 
-
-
 /* Hero Section */
 .hero-section {
 	overflow: hidden;
@@ -358,4 +356,84 @@ footer > div > h3 {
 footer > .socials > a {
 	display: inline-block;
 	margin: 0 0.5rem;
+}
+
+/* Orientation Styles */
+
+@media (orientation: landscape) {
+	.app-bar {
+		position: unset;
+		height: 12vh;
+		width: 100%;
+		margin-bottom: 1rem;
+		padding-right: 0;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.app-bar > .logo {
+		margin-top: 1rem;
+	}
+
+	.app-bar > i {
+		display: none;
+	}
+
+	.app-bar > .toggler {
+		display: none;
+	}
+
+	.app-bar > .navigation {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		position: unset;
+		height: 12vh;
+		width: 100%;
+		margin-left: 1rem;
+		background-color: transparent;
+	}
+
+	.navigation nav {
+		margin-bottom: 0;
+		width: 40%;
+	}
+
+	.app-bar > .navigation > nav > ul {
+		flex-direction: row;
+	}
+
+	.navigation ul > li {
+		padding: 0;
+		margin-bottom: 0;
+	}
+
+	.navigation ul > li a {
+		font-size: 0.85rem;
+		color: var(--neutral-greyish-violet);
+	}
+
+	.register {
+		display: inline-flex;
+		align-items: center;
+		justify-content: space-evenly;
+		height: 12vh;
+	}
+
+	.register > button {
+		margin: 0 .5rem;
+		padding: 0.25rem .8rem;
+		font-size: 0.8rem;
+	}
+
+	.register > button:first-child {
+		padding-inline: 1.2rem;
+	}
+
+	/* Push the Shortener Section Down */
+
+	.main-shortener {
+		margin-top: 10rem;
+	}
 }
