@@ -449,11 +449,23 @@ footer > .socials > a {
 
 @media (min-width: 760px){
 
-	.container {
-		border: 1px solid red;
-	}
-
 	.hero-section > img {
 		width: 120%;
+	}
+
+	footer {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		text-align: start;
+		padding: 1rem;
+	}
+
+	footer > div {
+		margin-bottom: 0;
+	}
+
+	footer > .company {
+		padding-top: 2rem;
 	}
 }
