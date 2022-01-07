@@ -57,14 +57,6 @@ header {
 	position: relative;
 }
 
-/* nav {
-	display: none;
-}
-
-.register {
-	display: none;
-} */
-
 .app-bar > i {
 	position: absolute;
 	top: 50%;
@@ -429,8 +421,8 @@ footer > .socials > a {
 	}
 
 	.register > button {
-		margin: 0 .5rem;
-		padding: 0.25rem .8rem;
+		margin: 0 0.5rem;
+		padding: 0.25rem 0.8rem;
 		font-size: 0.8rem;
 	}
 
@@ -447,9 +439,8 @@ footer > .socials > a {
 
 /* Larger Displays Styling */
 
-@media (min-width: 760px){
-
-	.hero-section > img {
+@media (min-width: 760px) {
+	.hero-img {
 		width: 120%;
 	}
 
@@ -467,5 +458,95 @@ footer > .socials > a {
 
 	footer > .company {
 		padding-top: 2rem;
+	}
+}
+
+@media (min-width: 900px) {
+	.container {
+		border: 1px solid red;
+	}
+
+	.app-bar > .logo {
+		padding-left: 2.4rem;
+	}
+
+	.hero-section {
+		width: 100%;
+		display: flex;
+	}
+
+	.hero-section > div:first-child {
+		order: 2;
+		width: 40%;
+	}
+
+	.hero-img {
+		margin-left: 0;
+		margin-bottom: 0;
+		width: 120%;
+	}
+
+	.hero-section > .main-heading {
+		width: 60%;
+		text-align: start;
+		margin-right: 0;
+		padding-left: 2.4rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.hero-section > .main-heading > button {
+		align-self: flex-start;
+	}
+
+	.hero-section > .main-heading > h1 {
+		font-size: 3.5rem;
+	}
+
+	.hero-section > .main-heading span {
+		display: block;
+	}
+}
+
+@media (min-width: 1200px) {
+	header {
+		min-height: 90vh;
+	}
+
+	.hero-section > .main-heading > h1 {
+		font-size: 5rem;
+		line-height: 1.2;
+	}
+
+	.hero-section > .main-heading > p {
+		font-size: 1.4rem;
+		margin: 1rem 0 2rem 0;
+	}
+
+	.main-shortener {
+		margin-top: 0;
+		padding-inline: 2.4rem;
+	}
+
+	.shortener-form {
+		background-image: linear-gradient(
+				to left,
+				hsla(257, 27%, 26%, 0.9),
+				hsla(257, 27%, 26%, 0.9)
+			),
+			url("./assets/images/bg-shorten-desktop.svg");
+		transform: translateY(-60px);	
+	}
+
+	.shortener-form > input,
+	.shortener-form > button {
+		display: inline-block;
+	
+		width: 79%;
+	}
+
+	.shortener-form > button {
+		width: 20%;
 	}
 }
