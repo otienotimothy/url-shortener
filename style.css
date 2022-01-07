@@ -365,9 +365,9 @@ footer > .socials > a {
 	margin: 0 0.5rem;
 }
 
-/* Orientation Styles */
+/* Landscape Mode Styles */
 
-@media (orientation: landscape) {
+@media (orientation: landscape), (min-width: 760px) {
 	.app-bar {
 		position: unset;
 		height: 12vh;
@@ -449,4 +449,11 @@ footer > .socials > a {
 
 @media (min-width: 760px){
 
+	.container {
+		border: 1px solid red;
+	}
+
+	.hero-section > img {
+		width: 120%;
+	}
 }
