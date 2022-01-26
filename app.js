@@ -14,9 +14,6 @@ async function shortenLink(url) {
 	}
 }
 
-// shortenLink(
-// 	"https://www.google.com/search?q=really+long+url&oq=really+long+url&aqs=chrome..69i57j0i512l2.8071j1j7&sourceid=chrome&ie=UTF-8"
-// );
 
 /** Insert Shortened Links to the Page */
 
@@ -43,6 +40,12 @@ function insertLinks(longLink, shortLink) {
 		linkContainer,
 		document.querySelector(".advanced-statistics")
 	);
+
+	button.addEventListener('click',function (){
+		console.log('clicked!!!')
+		navigator.clipboard.writeText(shortLink);
+		button.innerHTML = 'Copied!!!'
+	});
 }
 
 /** Listen to Form Submit Event */
